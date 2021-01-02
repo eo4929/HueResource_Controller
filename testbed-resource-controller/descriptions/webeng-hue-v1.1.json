@@ -1,0 +1,94 @@
+{
+    "@context": "https://www.w3.org/2019/wot/td/v1",
+    "title": "hue",
+    "id": "webeng-hue-v1.1-01",
+    "description" : "hue is a IoT lamp",
+    "securityDefinitions": {
+        "nosec_sc": {
+            "scheme": "nosec"
+        },
+        "basic_sc": {
+            "scheme": "basic", 
+            "in": "header",
+            "name": "USER-ID"
+        }
+    },
+    "security": "basic_sc",
+    "properties": {
+        "status": {
+            "type": "string",
+            "description": "this can get hue's status information",
+            "forms": [{
+                "href": "http://143.248.41.173:8000/",
+                "readOnly": true,
+                "htv:methodName": "GET",
+                "security": "nosec_sc"
+            }]
+        }
+    },
+    "actions": {
+        "on": {
+            "title": "turn on hue",
+            "description": "the action makes hue activated",
+            "forms": [{
+                "href": "http://143.248.41.173:8000/resource/on",
+                "htv:methodName": "POST"
+            }],
+            "input": {
+                "type": "string"
+            }
+,            "output": {
+                "type": "object"
+            }
+        },
+        "off": {
+            "title": "turn off hue",
+            "description": "the action makes hue deactivated",
+            "forms": [{
+                "href": "http://143.248.41.173:8000/resource/on",
+                "htv:methodName": "POST"
+            }],
+            "input": {
+                "type": "string"
+            },
+            "output": {
+                "type": "object"
+            }
+        },
+
+        "bind": {
+            "title": "Bind hue resource",
+            "description": "The action binds the resource to the user with authorization",
+            "output": {
+                "type": "object",
+                "properties": {
+                    "userId": {
+                        "type": "string"
+                    }
+                },
+                "required": ["userId"]
+            },
+            "forms": [{
+                "href": "http://143.248.41.173:8000/user/bind",
+                "htv:methodName": "POST"
+            }]
+        },
+        "unbind": {
+            "title": "Unbind hue resource",
+            "description": "The action unbinds the resource from the previous user",
+            "output": {
+                "type": "object",
+                "properties": {
+                    "userId": {
+                        "type": "string"
+                    }
+                },
+                "required": ["userId"]
+            },
+            "forms": [{
+                "href": "http://143.248.41.173:8000/user/unbind",
+                "htv:methodName": "POST"
+            }]
+        }
+    }
+}

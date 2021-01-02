@@ -1,0 +1,12 @@
+[5780] 21 Jun 19:58:49.775 # Warning: no config file specified, using the default config. In order to specify a config file use C:\Program Files\Redis\redis-server.exe /path/to/redis.conf
+[5780] 21 Jun 19:58:49.777 # Creating Server TCP listening socket *:6379: bind: No such file or directory
+[5164] 21 Jun 19:59:46.673 # Warning: no config file specified, using the default config. In order to specify a config file use C:\Program Files\Redis\redis-server.exe /path/to/redis.conf
+[5164] 21 Jun 19:59:46.676 # Creating Server TCP listening socket *:6379: bind: No such file or directory
+[8188] 21 Jun 19:59:56.984 # Warning: no config file specified, using the default config. In order to specify a config file use C:\Program Files\Redis\redis-server.exe /path/to/redis.conf
+[8188] 21 Jun 19:59:56.988 # Creating Server TCP listening socket *:6379: bind: No such file or directory
+[10044] 21 Jun 20:00:14.043 # Warning: no config file specified, using the default config. In order to specify a config file use C:\Program Files\Redis\redis-server.exe /path/to/redis.conf
+[10044] 21 Jun 20:00:14.046 # Creating Server TCP listening socket *:6379: bind: No such file or directory
+[9900] 16 Jul 13:46:49.741 # Warning: no config file specified, using the default config. In order to specify a config file use C:\Program Files\Redis\redis-server.exe /path/to/redis.conf
+[9900] 16 Jul 13:46:49.745 # Creating Server TCP listening socket *:6379: bind: No such file or directory
+[10784] 19 Jul 14:26:13.899 # Warning: no config file specified, using the default config. In order to specify a config file use C:\Program Files\Redis\redis-server.exe /path/to/redis.conf
+[10784] 19 Jul 14:26:13.903 # Creating Server TCP listening socket *:6379: bind: No such file or directory
